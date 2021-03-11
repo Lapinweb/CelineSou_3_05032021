@@ -3,22 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/6afb16f4eb.js" crossorigin="anonymous"></script>
         <title>ohmyfood</title>
     </head>
 
     <body>
+        <!--Section en-tête-->
         <header>
-            <a href="" class="header__btn-retour"><img src="" alt="flèche retour"></a>
-            <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            <a class="header__bouton-retour" href="index.html"><i class="fas fa-arrow-left"></i></a>
+            <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </header>
 
+        <!--Section principale-->
         <main>
+            <!--Image de plats-->
             <img src="" alt="">
+
+            <!--Section menu-->
             <section class="menu">
                 <h1 class="menu__titre"></h1>
-                <img src="" alt="">
-                <div class="menu__section menu__entrees">
-                    <h2></h2>
+
+                <!--Icone "j'aime"-->
+                <div class="coeur coeur--violet">
+                    <i class="far fa-heart"></i>
+                </div>
+
+                <!--Section entrées-->
+                <div class="menu__selection selection">
+                    <h2 class="selection__titre"></h2>
 
                     <div class="plat">
                         <p class="plat__nom"></p>
@@ -48,8 +60,9 @@
                     </div>
                 </div>
 
-                <div class="menu__section menu__plats">
-                    <h2></h2>
+                <!--Section plats-->
+                <div class="menu__selection selection">
+                    <h2 class="selection__titre"></h2>
 
                     <div class="plat">
                         <p class="plat__nom"></p>
@@ -79,8 +92,9 @@
                     </div>
                 </div>
 
-                <div class="menu__section menu__dessert">
-                    <h2></h2>
+                <!--Section desserts-->
+                <div class="menu__selection selection">
+                    <h2 class="selection__titre"></h2>
 
                     <div class="plat">
                         <p class="plat__nom"></p>
@@ -111,36 +125,38 @@
                 </div>
             </section>
 
-            <button class="btn__commander"></button>
+            <!--Bouton "Commander"-->
+            <button class="btn btn--degradeviolet"></button>
         </main>
 
+        <!--Section pied-de-page-->
         <footer>
             <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
     
-            <nav>
-                <ul>
+            <nav class="nav">
+                <ul class="nav__list">
                     <li>
-                        <a href="">
+                        <a class="nav__link" href="">
                             <i class="fas fa-utensils"></i>
                             <p>Proposer un restaurant</p>
                         </a>
                     </li>
     
                     <li>
-                        <a href="">
+                        <a class="nav__link" href="">
                             <i class="fas fa-hands-helping"></i>
                             <p>Devenir partenaire</p>
                         </a>
                     </li>
     
                     <li>
-                        <a href="">
+                        <a class="nav__link" href="">
                             <p>Mentions légales</p>
                         </a>
                     </li>
     
                     <li>
-                        <a href="">
+                        <a class="nav__link" href="">
                             <p>Contact</p>
                         </a>
                     </li>

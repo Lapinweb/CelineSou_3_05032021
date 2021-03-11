@@ -8,104 +8,140 @@
 </head>
 
 <body>
+    <!--Section en-tête-->
     <header>
-        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
     </header>
 
+    <!--Section principale-->
     <main>
-        <section class="location">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Paris, Belleville</p>
+
+        <!--Section localisation-->
+        <section class="localisation">
+            <i class="fas fa-map-marker-alt localisation__icone"></i>
+            <p class="localisation__nom">Paris, Belleville</p>
         </section>
 
-        <section>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par vos soins</p>
-            <button class="btn--degradeviolet">Explorer nos restaurants</button>
+        <!--Section description-->
+        <section class="description">
+            <h1 class="description__titre">Réservez le menu qui vous convient</h1>
+            <p class="description__sous-titre">Découvrez des restaurants d'exception, sélectionnés par vos soins</p>
+            <button class="btn btn--degradeviolet">Explorer nos restaurants</button>
         </section>
 
-        <section>
-            <h2>Fonctionnement</h2>
-            <ol>
-                <li>
-                    <i class="fas fa-mobile-alt"></i>
+        <!--Section fonctionnement-->
+        <section class="fonctionnement">
+            <h2 class="fonctionnement__titre">Fonctionnement</h2>
+            <ol class="fonctionnement__liste">
+                <li class="fonctionnement__element">
+                    <i class="fas fa-mobile-alt fonctionnement__icone"></i>
                     <p>Choississez un restaurant</p>
                 </li>
 
-                <li>
-                    <i class="fas fa-list-ul"></i>
+                <li class="fonctionnement__element">
+                    <i class="fas fa-list-ul fonctionnement__icone"></i>
                     <p>Composez votre menu</p>
                 </li>
 
-                <li>
-                    <i class="fas fa-store"></i>
+                <li class="fonctionnement__element">
+                    <i class="fas fa-store fonctionnement__icone fonctionnement__icone--active"></i>
                     <p>Dégustez au restaurant</p>
                 </li>
             </ol>
         </section>
 
+        <!--Section liste des restaurants-->
         <section>
             <h2>Restaurants</h2>
 
-            <a href="menu-lapalettedugout.html">
-                <img src="" alt="La palette du goût">
-                <p>Nouveau</p>
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-                <i class="far fa-heart"></i>
+            <a class="lien-menu" href="menu-lapalettedugout.html">
+                <img class="lien-menu__img" src="" alt="La palette du goût">
+                
+                <p class="lien-menu__nouveau lien-menu__nouveau--vert">Nouveau</p>
+                
+                <div class="lien-menu__description">
+                    <h3 class="lien-menu__titre">La palette du goût</h3>
+                    <p class="lien-menu__location">Ménilmontant</p>
+                </div>
+                
+                <div class="coeur coeur--violet">
+                    <i class="far fa-heart"></i>
+                </div>
+                
             </a>
 
-            <a href="menu-lanoteenchantee.html">
-                <img src="" alt="La note enchantée">
-                <p>Nouveau</p>
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-                <i class="far fa-heart"></i>
+            <a class="lien-menu" href="menu-lanoteenchantee.html">
+                <img class="lien-menu__img" src="" alt="La note enchantée">
+                
+                <p class="lien-menu__nouveau lien-menu__nouveau--vert">Nouveau</p>
+                
+                <div class="lien-menu__description">
+                    <h3 class="lien-menu__titre">La note enchantée</h3>
+                    <p class="lien-menu__location">Charonne</p>
+                </div>
+                
+                <div class="coeur coeur--violet">
+                    <i class="far fa-heart"></i>
+                </div>
             </a>
 
-            <a href="menu-alafrancaise.html">
-                <img src="" alt="A la française">
-                <h3>A la française</h3>
-                <p>Cité Rouge</p>
-                <i class="far fa-heart"></i>
+            <a class="lien-menu" href="menu-alafrancaise.html">
+                <img class="lien-menu__img" src="" alt="A la française">
+                
+                <div class="lien-menu__description">
+                    <h3 class="lien-menu__titre">A la française</h3>
+                    <p class="lien-menu__location">Cité Rouge</p>
+                
+                </div>
+                
+                <div class="coeur coeur--violet">
+                    <i class="far fa-heart"></i>
+                </div>
             </a>
 
-            <a href="menu-ledelicedessens.html">
-                <img src="" alt="Le délice des sens">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-                <i class="far fa-heart"></i>
+            <a class="lien-menu" href="menu-ledelicedessens.html">
+                <img class="lien-menu__img" src="" alt="Le délice des sens">
+                
+                <div class="lien-menu__description">
+                    <h3 class="lien-menu__titre">Le délice des sens</h3>
+                    <p class="lien-menu__location">Folie-Méricourt</p>
+                </div>
+                
+                <div class="coeur coeur--violet">
+                    <i class="far fa-heart"></i>
+                </div>
             </a>
         </section>
     </main>
     
+    <!--Section pied-de-page-->
     <footer>
         <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
 
-        <nav>
-            <ul>
+        <nav class="nav">
+            <ul class="nav__list">
                 <li>
-                    <a href="">
+                    <a class="nav__link" href="">
                         <i class="fas fa-utensils"></i>
                         <p>Proposer un restaurant</p>
                     </a>
                 </li>
 
                 <li>
-                    <a href="">
+                    <a class="nav__link" href="">
                         <i class="fas fa-hands-helping"></i>
                         <p>Devenir partenaire</p>
                     </a>
                 </li>
 
                 <li>
-                    <a href="">
+                    <a class="nav__link" href="">
                         <p>Mentions légales</p>
                     </a>
                 </li>
 
                 <li>
-                    <a href="">
+                    <a class="nav__link" href="">
                         <p>Contact</p>
                     </a>
                 </li>
