@@ -1,0 +1,19 @@
+{
+  "name": "celinesou_3_05032021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lapinweb/CelineSou_3_05032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lapinweb/CelineSou_3_05032021/issues"
+  },
+  "homepage": "https://github.com/Lapinweb/CelineSou_3_05032021#readme"
+}
