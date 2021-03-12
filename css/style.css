@@ -1,3 +1,13 @@
+.bloc-page {
+  width: 90%;
+  margin: auto;
+}
 
+.bloc-page {
+  font-family: "Roboto";
+}
+.bloc-page .menu__titre {
+  font-family: "Shrikhand";
+}
 
 /*# sourceMappingURL=style.css.map */
