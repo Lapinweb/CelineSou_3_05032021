@@ -3,165 +3,170 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/6afb16f4eb.js" crossorigin="anonymous"></script>
         <title>ohmyfood</title>
     </head>
 
     <body>
-        <!--Section en-tête-->
-        <header>
-            <a class="header__bouton-retour" href="index.html"><i class="fas fa-arrow-left"></i></a>
-            <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
-        </header>
+        <div class="bloc-page">
+            <!--Section en-tête-->
+            <header class="header">
+                <a class="header__bouton-retour" href="index.html"><i class="fas fa-arrow-left"></i></a>
+                <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            </header>
 
-        <!--Section principale-->
-        <main>
-            <!--Image de plats-->
-            <img src="" alt="">
+            <!--Section principale-->
+            <main>
+                <!--Image de plats-->
+                <img src="" alt="">
 
-            <!--Section menu-->
-            <section class="menu">
-                <h1 class="menu__titre">À la française</h1>
+                <!--Section menu-->
+                <section class="menu">
+                    <h1 class="menu__titre">À la française</h1>
 
-                <!--Icone "j'aime"-->
-                <div class="coeur coeur--violet">
-                    <i class="far fa-heart"></i>
-                </div>
+                    <!--Icone "j'aime"-->
+                    <div class="coeur coeur--violet">
+                        <i class="far fa-heart"></i>
+                    </div>
 
-                <!--Section entrées-->
-                <div class="menu__selection selection">
-                    <h2 class="selection__titre">Entrées</h2>
+                    <!--Section entrées-->
+                    <div class="menu__selection selection">
+                        <h2 class="selection__titre">Entrées</h2>
 
-                    <div class="plat">
-                        <p class="plat__nom">Tartare de poulpe acidulé</p>
-                        <p class="plat__details">Aux zestes d'orange</p>
-                        <div class="plat__prix-coche">
-                            <p class="plat__prix">25€</p>
-                            <div class="plat__coche"></div>
+                        <div class="menu__vignette vignette">
+                            <p class="vignette__nom">Tartare de poulpe acidulé</p>
+                            <p class="vignette__details">Aux zestes d'orange</p>
+                            <div class="vignette__prix-coche">
+                                <p class="vignette__prix">25€</p>
+                                <div class="vignette__coche"></div>
+                            </div>
+                        </div>
+
+                        <div class="menu__vignette vignette">
+                            <p class="vignette__nom">Velouté de légumes d'antan</p>
+                            <p class="vignette__details">Carotte, panais, topinambour</p>
+                            <div class="vignette__prix-coche">
+                                <p class="vignette__prix">35€</p>
+                                <div class="vignette__coche"></div>
+                            </div>
+                        </div>
+
+                        <div class="menu__vignette vignette">
+                            <p class="vignette__nom">Soupe à l'oignon</p>
+                            <p class="vignette__details">Revisitée</p>
+                            <div class="vignette__prix-coche">
+                                <p class="vignette__prix">20€</p>
+                                <div class="vignette__coche"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="plat">
-                        <p class="plat__nom">Velouté de légumes d'antan</p>
-                        <p class="plat__details">Carotte, panais, topinambour</p>
-                        <div class="plat__prix-coche">
-                            <p class="plat__prix">35€</p>
-                            <div class="plat__coche"></div>
+                    <!--Section plats-->
+                    <div class="menu__selection selection">
+                        <h2 class="selection__titre">Plats</h2>
+
+                        <div class="menu__vignette vignette">
+                            <p class="vignette__nom">Coquilles Saint-Jacques</p>
+                            <p class="vignette__details">Accompagnées d'une purée de panais</p>
+                            <div class="vignette__prix-coche">
+                                <p class="vignette__prix">40€</p>
+                                <div class="vignette__coche"></div>
+                            </div>
+                        </div>
+
+                        <div class="menu__vignette vignette">
+                            <p class="vignette__nom">Magret de canard</p>
+                            <p class="vignette__details">Et parmentier de pommes de terre</p>
+                            <div class="vignette__prix-coche">
+                                <p class="vignette__prix">35€</p>
+                                <div class="vignette__coche"></div>
+                            </div>
+                        </div>
+
+                        <div class="menu__vignette vignette">
+                            <p class="vignette__nom">Pigeonneau d’Ille-et-Vilaine</p>
+                            <p class="vignette__details">Sur son lit de gnocchis aux légumes</p>
+                            <div class="vignette__prix-coche">
+                                <p class="vignette__prix">44€</p>
+                                <div class="vignette__coche"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="plat">
-                        <p class="plat__nom">Soupe à l'oignon</p>
-                        <p class="plat__details">Revisitée</p>
-                        <div class="plat__prix-coche">
-                            <p class="plat__prix">20€</p>
-                            <div class="plat__coche"></div>
+                    <!--Section desserts-->
+                    <div class="menu__selection selection">
+                        <h2 class="selection__titre">Desserts</h2>
+
+                        <div class="menu__vignette vignette">
+                            <p class="vignette__nom">Pétales de violettes glacés</p>
+                            <p class="vignette__details">Et purée de noisettes</p>
+                            <div class="vignette__prix-coche">
+                                <p class="vignette__prix">18€</p>
+                                <div class="vignette__coche"></div>
+                            </div>
+                        </div>
+
+                        <div class="menu__vignette vignette">
+                            <p class="vignette__nom">Fondant au chocolat</p>
+                            <p class="vignette__details">Revisité</p>
+                            <div class="vignette__prix-coche">
+                                <p class="vignette__prix">22€</p>
+                                <div class="vignette__coche"></div>
+                            </div>
+                        </div>
+
+                        <div class="menu__vignette vignette">
+                            <p class="vignette__nom">Millefeuille croustillant</p>
+                            <p class="vignette__details">Myrtilles et pâte d’amande</p>
+                            <div class="vignette__prix-coche">
+                                <p class="vignette__prix">23€</p>
+                                <div class="vignette__coche"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <!--Section plats-->
-                <div class="menu__selection selection">
-                    <h2 class="selection__titre">Plats</h2>
+                <!--Bouton "Commander"-->
+                <button class="btn btn--degradeviolet">Commander</button>
+            </main>
 
-                    <div class="plat">
-                        <p class="plat__nom">Coquilles Saint-Jacques</p>
-                        <p class="plat__details">Accompagnées d'une purée de panais</p>
-                        <div class="plat__prix-coche">
-                            <p class="plat__prix">40€</p>
-                            <div class="plat__coche"></div>
-                        </div>
-                    </div>
-
-                    <div class="plat">
-                        <p class="plat__nom">Magret de canard</p>
-                        <p class="plat__details">Et parmentier de pommes de terre</p>
-                        <div class="plat__prix-coche">
-                            <p class="plat__prix">35€</p>
-                            <div class="plat__coche"></div>
-                        </div>
-                    </div>
-
-                    <div class="plat">
-                        <p class="plat__nom">Pigeonneau d’Ille-et-Vilaine</p>
-                        <p class="plat__details">Sur son lit de gnocchis aux légumes</p>
-                        <div class="plat__prix-coche">
-                            <p class="plat__prix">44€</p>
-                            <div class="plat__coche"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Section desserts-->
-                <div class="menu__selection selection">
-                    <h2 class="selection__titre">Desserts</h2>
-
-                    <div class="plat">
-                        <p class="plat__nom">Pétales de violettes glacés</p>
-                        <p class="plat__details">Et purée de noisettes</p>
-                        <div class="plat__prix-coche">
-                            <p class="plat__prix">18€</p>
-                            <div class="plat__coche"></div>
-                        </div>
-                    </div>
-
-                    <div class="plat">
-                        <p class="plat__nom">Fondant au chocolat</p>
-                        <p class="plat__details">Revisité</p>
-                        <div class="plat__prix-coche">
-                            <p class="plat__prix">22€</p>
-                            <div class="plat__coche"></div>
-                        </div>
-                    </div>
-
-                    <div class="plat">
-                        <p class="plat__nom">Millefeuille croustillant</p>
-                        <p class="plat__details">Myrtilles et pâte d’amande</p>
-                        <div class="plat__prix-coche">
-                            <p class="plat__prix">23€</p>
-                            <div class="plat__coche"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Bouton "Commander"-->
-            <button class="btn btn--degradeviolet">Commander</button>
-        </main>
-
-        <!--Section pied-de-page-->
-        <footer>
-            <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
-    
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li>
-                        <a class="nav__link" href="">
-                            <i class="fas fa-utensils"></i>
-                            <p>Proposer un restaurant</p>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a class="nav__link" href="">
-                            <i class="fas fa-hands-helping"></i>
-                            <p>Devenir partenaire</p>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a class="nav__link" href="">
-                            <p>Mentions légales</p>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a class="nav__link" href="">
-                            <p>Contact</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
+            <!--Section pied-de-page-->
+            <footer class="footer">
+                <img class="footer__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a class="nav__link" href="">
+                                <i class="fas fa-utensils"></i>
+                                <p>Proposer un restaurant</p>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a class="nav__link" href="">
+                                <i class="fas fa-hands-helping"></i>
+                                <p>Devenir partenaire</p>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a class="nav__link" href="">
+                                <p>Mentions légales</p>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a class="nav__link" href="">
+                                <p>Contact</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
     </body>
 </html>

@@ -1,0 +1,34 @@
+.bloc-page {
+  width: 92%;
+  margin: auto;
+}
+
+.bloc-page {
+  font-family: "Roboto";
+}
+.bloc-page .menu__titre {
+  font-family: "Shrikhand";
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 163px 1fr;
+  grid-template-rows: 60px;
+  grid-template-areas: "fleche logo .";
+  align-items: center;
+  justify-items: center;
+}
+.header__logo {
+  grid-area: logo;
+  width: 163px;
+}
+.header__bouton-retour {
+  grid-area: fleche;
+  justify-self: start;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=style.css.map */
