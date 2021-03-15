@@ -1,8 +1,16 @@
-footer{
+.footer{
     position: absolute;
     left: 0;
     width: 100%;
-    background-color: #353535;
+    background-color: $couleur-fond-fonce;
+
+    &__logo{
+        display: inline-block;
+        color: white;
+        font-size: 1.1em;
+        font-family: $police-logotitre;
+        margin: 20px 0 15px 7%;
+    }
 }
 
 .nav{
@@ -10,13 +18,6 @@ footer{
     margin: 0 auto;
     padding-bottom: 30px;
 
-    &__logo{
-        display: inline-block;
-        color: white;
-        font-size: 1.1em;
-        font-family: $police-logotitre;
-        margin: 20px 0 15px;
-    }
     ul {
         list-style-type: none;
         padding: 0;
@@ -33,12 +34,10 @@ footer{
         color: white;
         display: flex;
         align-items: baseline;
-        div{
+        i {
             width: 20px;
             margin: 0 7px 0 0px;
             text-align: center;
-        }
-        i {
             font-size: 0.8em;
         }
         p{
