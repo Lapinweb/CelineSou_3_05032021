@@ -1,0 +1,12 @@
+@mixin fullwidth {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+@mixin bloc-ombre ($color:$couleur-fond-menu){
+    box-shadow: 0 5px 10px darken($color, 10);
+}

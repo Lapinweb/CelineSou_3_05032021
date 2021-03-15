@@ -81,16 +81,17 @@ html .footer__logo {
 
 .localisation {
   height: 50px;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 5px 5px -2px #d1d1d1;
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  background-color: #EAEAEA;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .localisation__icone {
   margin: 0 15px 0 0;
@@ -103,14 +104,14 @@ html .footer__logo {
 
 .description {
   background-color: #f6f6f6;
+  padding: 40px 0 50px;
+  text-align: center;
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 40px 0 50px;
-  text-align: center;
 }
 .description__titre {
   width: 76%;
@@ -121,6 +122,55 @@ html .footer__logo {
   margin: 20px auto 30px;
   font-size: 1em;
   font-weight: lighter;
+}
+
+.fonctionnement {
+  padding: 40px 0;
+}
+.fonctionnement__titre {
+  margin: 0 0 25px;
+}
+.fonctionnement ol {
+  list-style: none;
+  counter-reset: liste;
+  margin: 0;
+  padding: 0;
+}
+.fonctionnement__element {
+  counter-increment: liste;
+  background-color: #f6f6f6;
+  margin: 0 0 25px;
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 10px #dddddd;
+}
+.fonctionnement__element .icone {
+  margin: 0 15px 0;
+  color: #656565;
+}
+.fonctionnement__element .icone--active {
+  color: #9356DC;
+}
+.fonctionnement__element p {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.fonctionnement__element::before {
+  content: counter(liste);
+  display: inline-block;
+  color: white;
+  background-color: #9356DC;
+  font-size: 0.8em;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.6em;
+  vertical-align: middle;
+  margin-left: -10px;
 }
 
 /*# sourceMappingURL=style.css.map */
