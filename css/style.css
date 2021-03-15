@@ -9,6 +9,9 @@ html {
 html .menu__titre {
   font-family: "Shrikhand";
 }
+html .footer__logo {
+  font-family: "Shrikhand";
+}
 
 .header {
   display: grid;
@@ -41,7 +44,6 @@ html .menu__titre {
   display: inline-block;
   color: white;
   font-size: 1.1em;
-  font-family: "Shrikhand";
   margin: 20px 0 15px 7%;
 }
 
@@ -75,6 +77,28 @@ html .menu__titre {
 .nav__lien p {
   margin: 0;
   padding: 0;
+}
+
+.localisation {
+  height: 50px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localisation__icone {
+  margin: 0 15px 0 0;
+}
+.localisation__nom {
+  margin: 0 25px 0 0;
+  font-weight: 600;
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=style.css.map */

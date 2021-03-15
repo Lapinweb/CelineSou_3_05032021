@@ -1,0 +1,23 @@
+.localisation{
+    height: 50px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: $couleur-fond-localisation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__icone{
+        margin: 0 15px 0 0;
+    }
+
+    &__nom{
+        margin: 0 25px 0 0;
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+}
