@@ -1,0 +1,23 @@
+.description{
+    background-color: $couleur-fond-menu;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 40px 0 50px;
+    text-align: center;
+
+    &__titre{
+        width: 76%;
+        margin: 0 auto;
+    }
+
+    &__sous-titre{
+        width: 80%;
+        margin: 20px auto 30px;
+        font-size: 1em;
+        font-weight: lighter;
+    }
+}
