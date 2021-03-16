@@ -1,0 +1,18 @@
+.description{
+    background-color: $couleur-fond-menu;
+    padding: 40px 0 50px;
+    text-align: center;
+    @include fullwidth;
+
+    &__titre{
+        width: 76%;
+        margin: 0 auto;
+    }
+
+    &__sous-titre{
+        width: 80%;
+        margin: 20px auto 30px;
+        font-size: 1em;
+        font-weight: lighter;
+    }
+}

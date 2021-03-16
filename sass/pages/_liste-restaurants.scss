@@ -1,0 +1,20 @@
+.liste-restaurants{
+    background-color: $couleur-fond-menu;
+    padding: 45px 0;
+    position: relative;
+
+    @include fullwidth;
+
+    h2{
+        width: 86%;
+        margin: 0 8% 30px 6%;
+    }
+
+    .colonne-cartes{
+        width: 86%;
+        margin: 0 8% 0 6%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+

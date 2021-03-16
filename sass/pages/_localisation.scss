@@ -1,0 +1,19 @@
+.localisation{
+    height: 50px;
+    background-color: $couleur-fond-localisation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 5px 5px -2px darken($couleur-fond-localisation, 10);
+    @include fullwidth;
+
+    &__icone{
+        margin: 0 15px 0 0;
+    }
+
+    &__nom{
+        margin: 0 25px 0 0;
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+}

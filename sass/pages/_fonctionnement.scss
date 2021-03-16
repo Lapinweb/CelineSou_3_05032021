@@ -1,0 +1,62 @@
+.fonctionnement{
+    padding: 40px 0;
+
+    &__titre{
+        margin: 0 0 25px;
+    }
+
+    ol{
+        list-style: none;
+        counter-reset: liste;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__element{
+        counter-increment: liste;
+        background-color: $couleur-fond-menu;
+        margin: 0 0 25px;
+        width: 100%;
+        height: 60px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        @include bloc-ombre;
+
+        .icone{
+            margin: 0 15px 0;
+            color: darken($couleur-fond-menu, 57);
+
+            &--active{
+                color: $couleur-primaire;
+            }
+        }
+
+        p{
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        &--active{
+            background-color: #F5EDFF;
+        }
+
+        &::before{
+            content: counter(liste);
+            display: inline-block;
+            color: white;
+            background-color: $couleur-primaire;
+            font-size: 0.8em;
+            width: 1.6em;
+            height: 1.6em;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 1.6em;
+            vertical-align: middle;
+            margin-left: -10px;
+        }
+    }
+
+    
+}
+

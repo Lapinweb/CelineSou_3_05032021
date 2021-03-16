@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .bloc-page {
   width: 92%;
   margin: auto;
@@ -8,6 +13,74 @@ html {
 }
 html .menu__titre {
   font-family: "Shrikhand";
+}
+html .footer__logo {
+  font-family: "Shrikhand";
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-size: 0.9em;
+  box-shadow: 0 5px 10px #dddddd;
+}
+.btn--degradeviolet {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+}
+
+.carte-menu {
+  position: relative;
+  width: 100%;
+  max-width: 345px;
+  margin: 0 0 30px;
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  box-shadow: 0 5px 10px #dddddd;
+}
+.carte-menu__img {
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+}
+.carte-menu__nouveau {
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  width: 80px;
+  height: 25px;
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  background-color: #99E2D0;
+  text-align: center;
+  line-height: 25px;
+  color: #278870;
+}
+.carte-menu__description {
+  position: relative;
+}
+.carte-menu__description h3 {
+  margin: 10px 0 0 10px;
+  font-size: 1em;
+}
+.carte-menu__description p {
+  margin: 0 0 10px 10px;
+  font-size: 0.9em;
+}
+.carte-menu .coeur {
+  position: absolute;
+  right: 7%;
+  bottom: 10%;
+  font-size: 1.4em;
 }
 
 .header {
@@ -41,7 +114,6 @@ html .menu__titre {
   display: inline-block;
   color: white;
   font-size: 1.1em;
-  font-family: "Shrikhand";
   margin: 20px 0 15px 7%;
 }
 
@@ -75,6 +147,125 @@ html .menu__titre {
 .nav__lien p {
   margin: 0;
   padding: 0;
+}
+
+.localisation {
+  height: 50px;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 5px 5px -2px #d1d1d1;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.localisation__icone {
+  margin: 0 15px 0 0;
+}
+.localisation__nom {
+  margin: 0 25px 0 0;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.description {
+  background-color: #f6f6f6;
+  padding: 40px 0 50px;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.description__titre {
+  width: 76%;
+  margin: 0 auto;
+}
+.description__sous-titre {
+  width: 80%;
+  margin: 20px auto 30px;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.fonctionnement {
+  padding: 40px 0;
+}
+.fonctionnement__titre {
+  margin: 0 0 25px;
+}
+.fonctionnement ol {
+  list-style: none;
+  counter-reset: liste;
+  margin: 0;
+  padding: 0;
+}
+.fonctionnement__element {
+  counter-increment: liste;
+  background-color: #f6f6f6;
+  margin: 0 0 25px;
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 10px #dddddd;
+}
+.fonctionnement__element .icone {
+  margin: 0 15px 0;
+  color: #656565;
+}
+.fonctionnement__element .icone--active {
+  color: #9356DC;
+}
+.fonctionnement__element p {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.fonctionnement__element--active {
+  background-color: #F5EDFF;
+}
+.fonctionnement__element::before {
+  content: counter(liste);
+  display: inline-block;
+  color: white;
+  background-color: #9356DC;
+  font-size: 0.8em;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.6em;
+  vertical-align: middle;
+  margin-left: -10px;
+}
+
+.liste-restaurants {
+  background-color: #f6f6f6;
+  padding: 45px 0;
+  position: relative;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.liste-restaurants h2 {
+  width: 86%;
+  margin: 0 8% 30px 6%;
+}
+.liste-restaurants .colonne-cartes {
+  width: 86%;
+  margin: 0 8% 0 6%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
