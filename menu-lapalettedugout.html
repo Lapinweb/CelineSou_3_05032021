@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/6afb16f4eb.js" crossorigin="anonymous"></script>
-        <title>ohmyfood</title>
+        <title>ohmyfood - La palette du goût</title>
     </head>
 
     <body>
@@ -21,116 +21,135 @@
             <!--Section principale-->
             <main>
                 <!--Image de plats-->
-                <img src="" alt="">
+                <img class="img-restaurant" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
 
                 <!--Section menu-->
                 <section class="menu">
-                    <h1 class="menu__titre">La palette du goût</h1>
+                    <div class="menu__titreicone">
+                        <h1 class="menu__titre">La palette du goût</h1>
 
-                    <!--Icone "j'aime"-->
-                    <div class="coeur coeur--violet">
-                        <i class="far fa-heart"></i>
+                        <!--Icone "j'aime"-->
+                        <i class="far fa-heart coeur coeur--violet"></i>
                     </div>
 
                     <!--Section entrées-->
-                    <div class="menu__selection selection">
-                        <h2 class="selection__titre">Entrées</h2>
+                    <div class="menu__selection">
+                        <h2 >Entrées</h2>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Fricassée d'escargot</p>
-                            <p class="vignette__details">Au piment d'Espelette</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Fricassée d'escargot</p>
+                                <p class="vignette__details">Au piment d'Espelette</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">25€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Foie gras de canard mi-cuit</p>
-                            <p class="vignette__details">Et ses copeaux de truffe noire</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Foie gras de canard mi-cuit</p>
+                                <p class="vignette__details">Et ses copeaux de truffe noire</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">35€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Oeuf au plat</p>
-                            <p class="vignette__details">Assaisonné à la truffe sur lit de caviar</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Oeuf au plat</p>
+                                <p class="vignette__details">Assaisonné à la truffe sur lit de caviar</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">20€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
                     </div>
 
                     <!--Section plats-->
-                    <div class="menu__selection selection">
-                        <h2 class="selection__titre">Plats</h2>
+                    <div class="menu__selection">
+                        <h2 >Plats</h2>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Filet de boeuf aux herbes</p>
-                            <p class="vignette__details">Accompagné de sa ribambelle de légumes</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Filet de boeuf aux herbes</p>
+                                <p class="vignette__details">Accompagné de sa ribambelle de légumes</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">40€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Parmentier de queue de boeuf</p>
-                            <p class="vignette__details">À la truffe noire sur sa purée de panais</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Parmentier de queue de boeuf</p>
+                                <p class="vignette__details">À la truffe noire sur sa purée de panais</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">35€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Filet de turbot</p>
-                            <p class="vignette__details">Aux agrumes</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Filet de turbot</p>
+                                <p class="vignette__details">Aux agrumes</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">44€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
                     </div>
 
                     <!--Section desserts-->
-                    <div class="menu__selection selection">
-                        <h2 class="selection__titre">Desserts</h2>
+                    <div class="menu__selection">
+                        <h2 >Desserts</h2>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Paris-Brest</p>
-                            <p class="vignette__details">Revisité</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Paris-Brest</p>
+                                <p class="vignette__details">Revisité</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">18€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Macaron au chocolat d'exception</p>
-                            <p class="vignette__details">Et glace à la vanille de Madagascar</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Macaron au chocolat d'exception</p>
+                                <p class="vignette__details">Et glace à la vanille de Madagascar</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">22€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Mousse au chocolat </p>
-                            <p class="vignette__details">Au piment d'Espelette et à la truffe noire</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Mousse au chocolat </p>
+                                <p class="vignette__details">Au piment d'Espelette et à la truffe noire</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">23€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
                     </div>
+
+                    <!--Bouton "Commander"-->
+                    <button class="btn btn--degradeviolet">Commander</button>
                 </section>
 
-                <!--Bouton "Commander"-->
-                <button class="btn btn--degradeviolet">Commander</button>
             </main>
 
             <!--Section pied-de-page-->

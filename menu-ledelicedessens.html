@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/6afb16f4eb.js" crossorigin="anonymous"></script>
-        <title>ohmyfood</title>
+        <title>ohmyfood - Le délice des sens</title>
     </head>
 
     <body>
@@ -21,116 +21,135 @@
             <!--Section principale-->
             <main>
                 <!--Image de plats-->
-                <img src="" alt="">
+                <img class="img-restaurant" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
 
                 <!--Section menu-->
                 <section class="menu">
-                    <h1 class="menu__titre">Le délice des sens</h1>
+                    <div class="menu__titreicone">
+                        <h1 class="menu__titre">Le délice des sens</h1>
 
-                    <!--Icone "j'aime"-->
-                    <div class="coeur coeur--violet">
-                        <i class="far fa-heart"></i>
+                        <!--Icone "j'aime"-->
+                        <i class="far fa-heart coeur coeur--violet"></i>
                     </div>
 
                     <!--Section entrées-->
-                    <div class="menu__selection selection">
-                        <h2 class="selection__titre">Entrées</h2>
+                    <div class="menu__selection">
+                        <h2 >Entrées</h2>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Tartare de thon</p>
-                            <p class="vignette__details">Assaisonné au yuzu</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Tartare de thon</p>
+                                <p class="vignette__details">Assaisonné au yuzu</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">25€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Bouchée de homard croustillant</p>
-                            <p class="vignette__details">Et sa farandole de petits légumes</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Bouchée de homard croustillant</p>
+                                <p class="vignette__details">Et sa farandole de petits légumes</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">35€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Velouté de cèpes</p>
-                            <p class="vignette__details">Aux truffes</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Velouté de cèpes</p>
+                                <p class="vignette__details">Aux truffes</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">20€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
                     </div>
 
                     <!--Section plats-->
-                    <div class="menu__selection selection">
-                        <h2 class="selection__titre">Plats</h2>
+                    <div class="menu__selection">
+                        <h2 >Plats</h2>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Poulet rôti aux herbes de Provence</p>
-                            <p class="vignette__details">Et sa crème de truffe</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Poulet rôti aux herbes de Provence</p>
+                                <p class="vignette__details">Et sa crème de truffe</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">40€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Langouste rôtie</p>
-                            <p class="vignette__details">Et ses légumes de saison</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Langouste rôtie</p>
+                                <p class="vignette__details">Et ses légumes de saison</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">35€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Côte de boeuf Angus</p>
-                            <p class="vignette__details">Et sa purée de panais</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Côte de boeuf Angus</p>
+                                <p class="vignette__details">Et sa purée de panais</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">44€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
                     </div>
 
                     <!--Section desserts-->
-                    <div class="menu__selection selection">
-                        <h2 class="selection__titre">Desserts</h2>
+                    <div class="menu__selection">
+                        <h2 >Desserts</h2>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Farandole de desserts</p>
-                            <p class="vignette__details">Du chef</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Farandole de desserts</p>
+                                <p class="vignette__details">Du chef</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">18€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Crème brulée</p>
-                            <p class="vignette__details">Revisitée</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Crème brulée</p>
+                                <p class="vignette__details">Revisitée</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">22€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
 
-                        <div class="menu__vignette vignette">
-                            <p class="vignette__nom">Tiramisu</p>
-                            <p class="vignette__details">À la noisette</p>
+                        <div class="vignette">
+                            <div class="vignette__nomdetails">
+                                <p class="vignette__nom">Tiramisu</p>
+                                <p class="vignette__details">À la noisette</p>
+                            </div>
                             <div class="vignette__prix-coche">
                                 <p class="vignette__prix">23€</p>
-                                <div class="vignette__coche"></div>
+                                <i class="fas fa-check-circle vignette__coche"></i>
                             </div>
                         </div>
                     </div>
-                </section>
 
-                <!--Bouton "Commander"-->
-                <button class="btn btn--degradeviolet">Commander</button>
+                    <!--Bouton "Commander"-->
+                    <button class="btn btn--degradeviolet">Commander</button>
+
+                </section>
             </main>
 
             <!--Section pied-de-page-->
