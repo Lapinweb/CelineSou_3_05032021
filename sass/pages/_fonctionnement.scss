@@ -37,6 +37,10 @@
             font-size: 0.9em;
         }
 
+        &--active{
+            background-color: #F5EDFF;
+        }
+
         &::before{
             content: counter(liste);
             display: inline-block;

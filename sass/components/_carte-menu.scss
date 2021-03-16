@@ -29,9 +29,9 @@
         font-size: 0.8em;
         font-weight: bold;
         background-color: $couleur-tertiaire;
-        color: darken($couleur-tertiaire, 40%);
         text-align: center;
         line-height: 25px;
+        @include couleur-bgd-text;
     }
 
     &__description{
@@ -52,6 +52,7 @@
         position: absolute;
         right: 7%;
         bottom: 10%;
+        font-size: 1.4em;
     }
 
 

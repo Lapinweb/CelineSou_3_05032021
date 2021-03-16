@@ -10,3 +10,12 @@
 @mixin bloc-ombre ($color:$couleur-fond-menu){
     box-shadow: 0 5px 10px darken($color, 10);
 }
+
+@mixin couleur-bgd-text ($couleur: $couleur-tertiaire){
+    @if ( lightness($couleur) < 50%){
+        $couleur: lighten($couleur, 40%);
+    }@else{
+        $couleur: darken($couleur, 40%);
+    }
+    color: $couleur;
+}
