@@ -4,8 +4,8 @@ body {
 }
 
 .bloc-page {
-  width: 92%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
 }
 
 html {
@@ -84,6 +84,8 @@ html .footer__logo {
 }
 
 .header {
+  width: 100%;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr 163px 1fr;
   grid-template-rows: 60px;
@@ -98,6 +100,7 @@ html .footer__logo {
 .header__bouton-retour {
   grid-area: fleche;
   justify-self: start;
+  margin: 0 0 0 30px;
   font-size: 1.3em;
   text-decoration: none;
   color: black;
@@ -105,10 +108,9 @@ html .footer__logo {
 }
 
 .footer {
-  position: absolute;
-  left: 0;
-  width: 100%;
   background-color: #353535;
+  width: 100%;
+  margin: auto;
 }
 .footer__logo {
   display: inline-block;
@@ -118,7 +120,7 @@ html .footer__logo {
 }
 
 .nav {
-  width: 88%;
+  width: 86%;
   margin: 0 auto;
   padding-bottom: 30px;
 }
@@ -156,12 +158,8 @@ html .footer__logo {
   justify-content: center;
   align-items: center;
   box-shadow: inset 0 5px 5px -2px #d1d1d1;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
+  margin: auto;
 }
 .localisation__icone {
   margin: 0 15px 0 0;
@@ -176,12 +174,8 @@ html .footer__logo {
   background-color: #f6f6f6;
   padding: 40px 0 50px;
   text-align: center;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
+  margin: auto;
 }
 .description__titre {
   width: 76%;
@@ -198,19 +192,22 @@ html .footer__logo {
   padding: 40px 0;
 }
 .fonctionnement__titre {
-  margin: 0 0 25px;
+  margin: 0 0 25px 7%;
 }
 .fonctionnement ol {
   list-style: none;
   counter-reset: liste;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .fonctionnement__element {
   counter-increment: liste;
   background-color: #f6f6f6;
   margin: 0 0 25px;
-  width: 100%;
+  width: 86%;
   height: 60px;
   border-radius: 15px;
   display: flex;
@@ -250,20 +247,16 @@ html .footer__logo {
   background-color: #f6f6f6;
   padding: 45px 0;
   position: relative;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
+  margin: auto;
 }
 .liste-restaurants h2 {
   width: 86%;
-  margin: 0 8% 30px 6%;
+  margin: 0 auto 30px;
 }
 .liste-restaurants .colonne-cartes {
   width: 86%;
-  margin: 0 8% 0 6%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
