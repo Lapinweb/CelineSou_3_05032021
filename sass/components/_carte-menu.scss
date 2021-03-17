@@ -12,7 +12,7 @@
     align-content: center;
     @include bloc-ombre;
 
-    @media screen and (min-width: map-get($breakpoints, tablette)){
+    @media screen and (min-width: map-get($breakpoints, tablette-index)){
         width: 48%;
     }
 
