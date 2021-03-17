@@ -1,8 +1,6 @@
 .footer{
-    position: absolute;
-    left: 0;
-    width: 100%;
     background-color: $couleur-fond-footer;
+    @include fullwidth;
 
     &__logo{
         display: inline-block;
@@ -13,7 +11,7 @@
 }
 
 .nav{
-    width: 88%;
+    width: 86%;
     margin: 0 auto;
     padding-bottom: 30px;
 

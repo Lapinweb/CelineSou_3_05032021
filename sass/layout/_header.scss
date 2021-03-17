@@ -1,4 +1,6 @@
 .header{
+    width: 100%;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 163px 1fr;
     grid-template-rows: 60px;
@@ -14,6 +16,7 @@
     &__bouton-retour{
         grid-area: fleche;
         justify-self: start;
+        margin: 0 0 0 30px;
         font-size: 1.3em;
         text-decoration: none;
         color: black;
