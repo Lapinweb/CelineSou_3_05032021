@@ -3,8 +3,8 @@
     margin: auto;
 }
 
-@mixin bloc-ombre ($color:$couleur-fond-menu){
-    box-shadow: 0 5px 10px darken($color, 10);
+@mixin bloc-ombre ($color:$couleur-fond-menu, $spread: 0){
+    box-shadow: 0 5px 10px $spread darken($color, 10);
 }
 
 @mixin couleur-bgd-text ($couleur: $couleur-tertiaire){

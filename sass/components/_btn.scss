@@ -9,5 +9,13 @@
     &--degradeviolet{
         background: linear-gradient($couleur-secondaire, $couleur-primaire);
         color: white;
+
+        &:hover{
+            background: linear-gradient(lighten($couleur-secondaire, 10), lighten($couleur-primaire, 10));
+        }
+    }
+
+    &:hover{
+        @include bloc-ombre($spread:10px);
     }
 }

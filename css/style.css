@@ -24,11 +24,17 @@ html .footer__logo {
   border-radius: 25px;
   border: none;
   font-size: 0.9em;
-  box-shadow: 0 5px 10px #dddddd;
+  box-shadow: 0 5px 10px 0 #dddddd;
 }
 .btn--degradeviolet {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
+}
+.btn--degradeviolet:hover {
+  background: linear-gradient(#fface8, #ae80e5);
+}
+.btn:hover {
+  box-shadow: 0 5px 10px 10px #dddddd;
 }
 
 .carte-menu {
@@ -43,7 +49,7 @@ html .footer__logo {
   display: flex;
   flex-direction: column;
   align-content: center;
-  box-shadow: 0 5px 10px #dddddd;
+  box-shadow: 0 5px 10px 0 #dddddd;
 }
 @media screen and (min-width: 600px) {
   .carte-menu {
@@ -172,7 +178,7 @@ html .footer__logo {
   max-height: 400px;
   margin: 0;
   padding: 0;
-  box-shadow: 0 5px 10px #dddddd;
+  box-shadow: 0 5px 10px 0 #dddddd;
 }
 
 .menu {
@@ -249,7 +255,7 @@ html .footer__logo {
   margin: 0 0 20px;
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0 5px 10px #dddddd;
+  box-shadow: 0 5px 10px 0 #dddddd;
   display: flex;
   justify-content: space-between;
 }
@@ -378,7 +384,7 @@ html .footer__logo {
   border-radius: 15px;
   display: flex;
   align-items: center;
-  box-shadow: 0 5px 10px #dddddd;
+  box-shadow: 0 5px 10px 0 #dddddd;
 }
 .fonctionnement__element .icone {
   margin: 0 7% 0;
