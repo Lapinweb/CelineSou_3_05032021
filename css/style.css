@@ -45,6 +45,11 @@ html .footer__logo {
   align-content: center;
   box-shadow: 0 5px 10px #dddddd;
 }
+@media screen and (min-width: 600px) {
+  .carte-menu {
+    width: 48%;
+  }
+}
 .carte-menu__img {
   object-fit: cover;
   width: 100%;
@@ -310,11 +315,19 @@ html .footer__logo {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement ol {
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+}
 .fonctionnement__element {
   counter-increment: liste;
   background-color: #f6f6f6;
   margin: 0 0 25px;
   width: 86%;
+  max-width: 322px;
   height: 60px;
   border-radius: 15px;
   display: flex;
@@ -322,7 +335,7 @@ html .footer__logo {
   box-shadow: 0 5px 10px #dddddd;
 }
 .fonctionnement__element .icone {
-  margin: 0 15px 0;
+  margin: 0 7% 0;
   color: #656565;
 }
 .fonctionnement__element .icone--active {
@@ -366,6 +379,14 @@ html .footer__logo {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  .liste-restaurants .colonne-cartes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

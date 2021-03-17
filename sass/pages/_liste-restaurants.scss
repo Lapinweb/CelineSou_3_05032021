@@ -14,6 +14,13 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: map-get($breakpoints, tablette)){
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
     }
 }
 

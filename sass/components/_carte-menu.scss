@@ -12,6 +12,10 @@
     align-content: center;
     @include bloc-ombre;
 
+    @media screen and (min-width: map-get($breakpoints, tablette)){
+        width: 48%;
+    }
+
     &__img{
         object-fit: cover;
         width: 100%;
