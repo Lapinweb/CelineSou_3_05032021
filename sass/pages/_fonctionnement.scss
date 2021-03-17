@@ -13,6 +13,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media screen and (min-width: map-get($breakpoints, desktop)){
+            flex-direction: row;
+            flex-flow: wrap;
+            justify-content: space-evenly;
+        }
     }
 
     &__element{
@@ -20,6 +26,7 @@
         background-color: $couleur-fond-menu;
         margin: 0 0 25px;
         width: 86%;
+        max-width: 322px;
         height: 60px;
         border-radius: 15px;
         display: flex;
@@ -27,7 +34,7 @@
         @include bloc-ombre;
 
         .icone{
-            margin: 0 15px 0;
+            margin: 0 7% 0;
             color: darken($couleur-fond-menu, 57);
 
             &--active{

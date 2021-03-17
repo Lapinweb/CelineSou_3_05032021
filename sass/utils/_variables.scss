@@ -7,3 +7,9 @@ $couleur-fond-localisation: #EAEAEA;
 
 $police-texte: 'Roboto';
 $police-logotitre: 'Shrikhand';
+
+$breakpoints: (
+    tablette-index: 600px,
+    desktop: 1200px,
+    tablette-menu: 800px,
+)
