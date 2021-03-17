@@ -204,6 +204,7 @@ html .footer__logo {
 .vignette {
   height: 60px;
   width: 100%;
+  max-width: 322px;
   margin: 0 0 20px;
   background-color: white;
   border-radius: 15px;
@@ -214,31 +215,40 @@ html .footer__logo {
 .vignette__nomdetails {
   margin: 10px 0 10px 10px;
   padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .vignette__nom {
   margin: 0 0 5px;
   padding: 0;
   font-weight: bold;
   font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .vignette__details {
   margin: 0;
   padding: 0;
   font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .vignette__prix-coche {
   display: flex;
   align-items: center;
 }
 .vignette__prix {
-  margin: 0 15px 10px 0;
+  margin: 0 15px 10px;
   font-size: 0.8em;
   font-weight: bold;
   align-self: flex-end;
 }
 .vignette .vignette__coche {
   height: 60px;
-  width: 50px;
+  width: 60px;
   font-size: 1.2em;
   background-color: #99E2D0;
   color: white;
