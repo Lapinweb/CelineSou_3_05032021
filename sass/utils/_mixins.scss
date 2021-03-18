@@ -15,3 +15,7 @@
     }
     color: $couleur;
 }
+
+@mixin degrade ($couleur1: $couleur-secondaire, $couleur2: $couleur-primaire) {
+    background: linear-gradient($couleur1, $couleur2);
+}

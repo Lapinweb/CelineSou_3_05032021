@@ -26,15 +26,15 @@ html .footer__logo {
   font-size: 0.9em;
   box-shadow: 0 5px 10px 0 #dddddd;
 }
-.btn--degradeviolet {
+.btn--degrade {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
 }
-.btn--degradeviolet:hover {
+.btn--degrade:hover {
   background: linear-gradient(#fface8, #ae80e5);
 }
 .btn:hover {
-  box-shadow: 0 5px 10px 10px #dddddd;
+  box-shadow: 0 5px 10px 5px #dddddd;
 }
 
 .carte-menu {
@@ -76,22 +76,53 @@ html .footer__logo {
   line-height: 25px;
   color: #278870;
 }
-.carte-menu__description {
-  position: relative;
+.carte-menu__texte-icone {
+  margin: 0 10% 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .carte-menu__description h3 {
-  margin: 10px 0 0 10px;
+  margin: 15px 0 5px 10px;
   font-size: 1em;
 }
 .carte-menu__description p {
-  margin: 0 0 10px 10px;
+  margin: 0 0 15px 10px;
   font-size: 0.9em;
 }
-.carte-menu .coeur {
+
+.coeur {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.coeur__bordure {
+  font-size: 1.5em;
   position: absolute;
-  right: 7%;
-  bottom: 10%;
-  font-size: 1.4em;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+.coeur__bordure:hover {
+  opacity: 0;
+}
+.coeur__bordure:hover + .coeur__plein {
+  transform: scale(1);
+}
+.coeur__plein {
+  font-size: 1.5em;
+  z-index: 2;
+  transform: scale(0);
+  transform-origin: 50% bottom;
+  transition: transform 500ms;
+}
+.coeur__plein--degrade {
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .header {
@@ -203,10 +234,6 @@ html .footer__logo {
   margin: 0;
   padding: 0;
   font-size: 1.6em;
-}
-.menu .coeur {
-  font-size: 1.4em;
-  margin: 0 5% 0 0;
 }
 .menu__selection {
   width: 86%;
