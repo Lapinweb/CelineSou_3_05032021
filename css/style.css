@@ -261,6 +261,17 @@ html .footer__logo {
   margin: 50px 0 75px;
 }
 
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    animation-timing-function: ease-in-out;
+  }
+}
 .colonne-vignettes {
   display: flex;
   flex-direction: column;
@@ -285,6 +296,19 @@ html .footer__logo {
   box-shadow: 0 5px 10px 0 #dddddd;
   display: flex;
   justify-content: space-between;
+  animation: apparition 1000ms backwards;
+}
+.vignette--1 {
+  animation-delay: 200ms;
+}
+.vignette--2 {
+  animation-delay: 400ms;
+}
+.vignette--3 {
+  animation-delay: 600ms;
+}
+.vignette--4 {
+  animation-delay: 800ms;
 }
 @media screen and (min-width: 800px) {
   .vignette {
