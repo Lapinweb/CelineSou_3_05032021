@@ -34,6 +34,7 @@
     @include bloc-ombre;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     animation: apparition $apparition-dur backwards;
     @for $i from 1 through 4 {
       &--#{$i} {
@@ -87,6 +88,12 @@
         font-size: 0.8em;
         font-weight: bold;
         align-self: flex-end;
+        transform: translate(60px);
+        transition: transform 500ms ease-in-out;
+    }
+      
+    &:hover .vignette__prix{
+        transform: translate(0);
     }
 
     .vignette__coche{
@@ -99,5 +106,20 @@
         text-align: center;
         line-height: 60px;
         vertical-align: middle;
+        transform-origin: right 50%;
+        transform: translateX(60px);
+        transition: transform 500ms ease-in-out;
+
+        i{
+            transform: rotate(0);
+            transition: transform 800ms;
+        }
+    }
+
+    &:hover .vignette__coche {
+        transform: translateX(0);
+        & > i{
+        transform: rotate(360deg);
+        }
     }
 }
