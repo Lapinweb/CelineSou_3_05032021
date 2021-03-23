@@ -5,10 +5,13 @@
 @import "./base/typography";
 @import "./components/btn";
 @import "./components/carte-menu";
+@import "./components/coeur";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/menu";
+@import "./layout/vignette";
 @import "./pages/localisation";
 @import "./pages/description";
 @import "./pages/fonctionnement";
 @import "./pages/liste-restaurants";
+@import "./pages/loading-spinner";

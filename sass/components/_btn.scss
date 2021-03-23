@@ -6,8 +6,16 @@
     font-size: 0.9em;
     @include bloc-ombre;
 
-    &--degradeviolet{
-        background: linear-gradient($couleur-secondaire, $couleur-primaire);
+    &--degrade{
+        @include degrade;
         color: white;
+
+        &:hover{
+            @include degrade (lighten($couleur-secondaire, 10), lighten($couleur-primaire, 10));
+        }
+    }
+
+    &:hover{
+        @include bloc-ombre($spread:5px);
     }
 }

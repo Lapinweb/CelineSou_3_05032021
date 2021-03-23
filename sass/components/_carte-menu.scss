@@ -38,26 +38,23 @@
         @include couleur-bgd-text;
     }
 
+    &__texte-icone{
+        margin: 0 10% 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__description{
-        position: relative;
 
         h3{
-            margin: 10px 0 0 10px;
+            margin: 15px 0 5px 10px;
             font-size: 1em;
         }
 
         p{
-            margin: 0 0 10px 10px;
+            margin: 0 0 15px 10px;
             font-size: 0.9em;
         }
     }
-
-    .coeur{
-        position: absolute;
-        right: 7%;
-        bottom: 10%;
-        font-size: 1.4em;
-    }
-
-
 }

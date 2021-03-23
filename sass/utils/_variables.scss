@@ -12,4 +12,15 @@ $breakpoints: (
     tablette-index: 600px,
     desktop: 1200px,
     tablette-menu: 800px,
-)
+);
+
+$apparition-dur: 1000ms;
+$apparitin-delay: 200ms;
+
+$loading-dur: 3000ms;
+$loading-debut-dur: 500ms;
+$loading-fin-delay: $loading-debut-dur + $loading-dur;
+$loading-fin-dur: 1000ms;
+$num-lettres: 8;
+$lettre-dur: 600ms;
+$lettre-delay: 75ms;

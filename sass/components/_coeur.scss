@@ -1,6 +1,40 @@
 .coeur{
-
-    &--violet{
-        
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+  
+    &__bordure{
+      font-size: 1.5em;
+      position: absolute;
+      z-index: 1;
+      opacity: 1;
+      transition: opacity 1000ms;
+      
+      &:hover{
+        opacity: 0;
+      }
+      
+      &:hover + .coeur__plein{
+        transform: scale(1);
+      }
     }
-}
+  
+    &__plein{
+      font-size: 1.5em;
+      z-index: 2;
+      transform: scale(0);
+      transform-origin: 50% bottom;
+      transition: transform 500ms;
+  
+      &--degrade{
+        @include degrade;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+  

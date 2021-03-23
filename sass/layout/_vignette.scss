@@ -1,0 +1,125 @@
+@keyframes apparition {
+    0% {
+      opacity: 0;
+      transform: translate(0, 10px)
+    }
+    
+    100%{
+      opacity: 1;
+      transform: translate(0, 0);
+      animation-timing-function: ease-in-out;
+    }
+}
+
+.colonne-vignettes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media  screen and (min-width: map-get($breakpoints, tablette-menu)){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+}
+
+.vignette{
+    height: 60px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 0 20px;
+    background-color: white;
+    border-radius: 15px;
+    @include bloc-ombre;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    animation: apparition $apparition-dur backwards;
+    @for $i from 1 through 4 {
+      &--#{$i} {
+        animation-delay: $apparitin-delay*$i;
+      }
+    }
+
+    @media  screen and (min-width: map-get($breakpoints, tablette-menu)){
+        width: 49%;
+    }
+
+    @media  screen and (min-width: map-get($breakpoints, desktop)){
+        width: 32%;
+    }
+
+    &__nomdetails{
+        margin: 10px 0 10px 10px;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__nom{
+        margin: 0 0 5px;
+        padding: 0;
+        font-weight: bold;
+        font-size: 1em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__details{
+        margin: 0;
+        padding: 0;
+        font-size: 0.9em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__prix-coche{
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__prix{
+        margin: 0 15px 10px;
+        font-size: 0.8em;
+        font-weight: bold;
+        align-self: flex-end;
+        transform: translate(60px);
+        transition: transform 500ms ease-in-out;
+    }
+      
+    &:hover .vignette__prix{
+        transform: translate(0);
+    }
+
+    .vignette__coche{
+        height: 60px;
+        width: 60px;
+        font-size: 1.2em;
+        background-color: $couleur-tertiaire;
+        color: white;
+        border-radius: 0 15px 15px 0;
+        text-align: center;
+        line-height: 60px;
+        vertical-align: middle;
+        transform-origin: right 50%;
+        transform: translateX(60px);
+        transition: transform 500ms ease-in-out;
+
+        i{
+            transform: rotate(0);
+            transition: transform 800ms;
+        }
+    }
+
+    &:hover .vignette__coche {
+        transform: translateX(0);
+        & > i{
+        transform: rotate(360deg);
+        }
+    }
+}
