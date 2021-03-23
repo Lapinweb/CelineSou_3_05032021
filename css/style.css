@@ -511,4 +511,100 @@ html .footer__logo {
   }
 }
 
+@keyframes loading-debut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loading-fin {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes lettres {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-family: "Shrikhand";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loading-fin 1000ms 3500ms both;
+}
+.loading__ustensiles {
+  font-size: 3.4em;
+  color: white;
+  animation: loading-debut 500ms backwards;
+}
+.loading__verre {
+  font-size: 3.4em;
+  color: white;
+  animation: loading-debut 500ms backwards;
+}
+.loading__cercle {
+  width: 180px;
+  height: 180px;
+  margin: 0 10px;
+  background-color: white;
+  border-radius: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loading-debut 500ms backwards;
+}
+.loading__lettre {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 1.7em;
+  animation: lettres 600ms infinite alternate both ease-in-out;
+}
+.loading__lettre--1 {
+  animation-delay: 75ms;
+}
+.loading__lettre--2 {
+  animation-delay: 150ms;
+}
+.loading__lettre--3 {
+  animation-delay: 225ms;
+}
+.loading__lettre--4 {
+  animation-delay: 300ms;
+}
+.loading__lettre--5 {
+  animation-delay: 375ms;
+}
+.loading__lettre--6 {
+  animation-delay: 450ms;
+}
+.loading__lettre--7 {
+  animation-delay: 525ms;
+}
+.loading__lettre--8 {
+  animation-delay: 600ms;
+}
+
 /*# sourceMappingURL=style.css.map */
