@@ -548,17 +548,19 @@ html .footer__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loading-fin 1000ms 3500ms both;
+  animation: loading-fin 1000ms 4000ms both;
 }
 .loading__ustensiles {
+  display: block;
   font-size: 3.4em;
   color: white;
-  animation: loading-debut 500ms backwards;
+  animation: loading-debut 500ms 500ms backwards;
 }
 .loading__verre {
+  display: block;
   font-size: 3.4em;
   color: white;
-  animation: loading-debut 500ms backwards;
+  animation: loading-debut 500ms 500ms backwards;
 }
 .loading__cercle {
   width: 180px;
@@ -569,7 +571,7 @@ html .footer__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loading-debut 500ms backwards;
+  animation: loading-debut 500ms 500ms backwards;
 }
 .loading__lettre {
   margin: 0;
