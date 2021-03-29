@@ -287,6 +287,7 @@ html .footer__logo {
 }
 
 .vignette {
+  position: relative;
   height: 60px;
   width: 100%;
   max-width: 480px;
@@ -294,8 +295,6 @@ html .footer__logo {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 5px 10px 0 #dddddd;
-  display: flex;
-  justify-content: space-between;
   overflow: hidden;
   animation: apparition 1000ms backwards;
 }
@@ -323,10 +322,15 @@ html .footer__logo {
 }
 .vignette__nomdetails {
   margin: 10px 0 10px 10px;
+  width: calc(100% - 57px);
   padding: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: width 500ms ease-in-out;
+}
+.vignette:hover .vignette__nomdetails {
+  width: calc(100% - 117px);
 }
 .vignette__nom {
   margin: 0 0 5px;
@@ -346,11 +350,16 @@ html .footer__logo {
   text-overflow: ellipsis;
 }
 .vignette__prix-coche {
+  position: absolute;
+  right: 0;
+  top: 0;
   display: flex;
   align-items: center;
 }
 .vignette__prix {
-  margin: 0 15px 10px;
+  margin: 0 0 10px;
+  width: 57px;
+  text-align: center;
   font-size: 0.8em;
   font-weight: bold;
   align-self: flex-end;
