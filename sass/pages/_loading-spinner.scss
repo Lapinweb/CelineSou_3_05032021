@@ -44,15 +44,17 @@
     animation: loading-fin $loading-fin-dur $loading-fin-delay both;
     
     &__ustensiles{
+        display: block;
         font-size: 3.4em;
         color: white;
-        animation: loading-debut $loading-debut-dur backwards;
+        animation: loading-debut $loading-debut-dur $loading-debut-delay backwards;
     }
     
     &__verre{
+        display: block;
         font-size: 3.4em;
         color: white;
-        animation: loading-debut $loading-debut-dur backwards;
+        animation: loading-debut $loading-debut-dur $loading-debut-delay backwards;
     }
 
     &__cercle{
@@ -64,7 +66,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: loading-debut $loading-debut-dur backwards;
+        animation: loading-debut $loading-debut-dur $loading-debut-delay backwards;
     }
     
     &__lettre{

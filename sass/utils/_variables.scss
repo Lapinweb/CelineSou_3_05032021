@@ -14,12 +14,17 @@ $breakpoints: (
     tablette-menu: 800px,
 );
 
+$width-prix: 57px;
+$width-coche: 60px;
+$width-prix-coche: $width-prix + $width-coche;
+
 $apparition-dur: 1000ms;
 $apparitin-delay: 200ms;
 
 $loading-dur: 3000ms;
 $loading-debut-dur: 500ms;
-$loading-fin-delay: $loading-debut-dur + $loading-dur;
+$loading-debut-delay: 500ms;
+$loading-fin-delay: $loading-debut-dur + $loading-debut-delay + $loading-dur;
 $loading-fin-dur: 1000ms;
 $num-lettres: 8;
 $lettre-dur: 600ms;
